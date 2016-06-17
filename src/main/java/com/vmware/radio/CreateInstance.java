@@ -15,7 +15,7 @@ import java.rmi.ServerException;
  */
 public class CreateInstance {
     public static void main(String[] args) {
-        IClientProfile profile = DefaultProfile.getProfile("cn-hangzhou", "NbdBPcIKLwMHW6jk", "tj0CfHxfv5MgFj7QdDSgT13PX9RtXn");
+        IClientProfile profile = DefaultProfile.getProfile("cn-hangzhou", "accesskey", "securitykey");
         IAcsClient client = new DefaultAcsClient(profile);
 
         CreateInstanceRequest createInstanceRequest = new CreateInstanceRequest();
